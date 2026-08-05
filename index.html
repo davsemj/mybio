@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>davsemj | Bio Link</title>
-    <!-- Fontes modernas no estilo Gamer/Guns.lol -->
+    
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
@@ -12,12 +12,11 @@
 </head>
 <body>
 
-    <!-- CONTAINER DO GIF DE FUNDO -->
+  
     <div class="fundo-gif">
         <img src="giffsite.gif" alt="Background Animado">
     </div>
 
-    <!-- HEADER: Menu superior de abas exigido pelo professor -->
     <header class="menu-superior">
         <nav class="menu">
             <a class="link ativo" href="#links" onclick="mudarAba('links')">Links</a>
@@ -25,10 +24,10 @@
         </nav>
     </header>
 
-    <!-- CARD CENTRAL PRINCIPAL (<main>) -->
+    
     <main class="card-principal">
         
-        <!-- Cabeçalho fixo do seu perfil -->
+        
         <header class="perfil-header">
             <div class="avatar-container">
                 <img src="terryy.jpg" alt="Foto de Perfil" class="avatar">
@@ -37,7 +36,7 @@
             <p class="subtitulo">@davsemj</p>
         </header>
 
-        <!-- ABA 1: LINKS (Fica visível por padrão) -->
+    
         <section id="links" class="aba-conteudo ativa">
             <div class="links-container">
                 <a href="https://www.instagram.com/davsemj/" target="_blank" class="botao-link">Instagram</a>
@@ -46,18 +45,14 @@
             </div>
         </section>
 
-        <!-- ABA 2: PLAYER DE MÚSICA NATIVO -->
         <section id="video" class="aba-conteudo">
             <div class="audio-container">
-                <!-- 
-                  DICA: COLOQUE O SEU ARQUIVO DE ÁUDIO NA MESMA PASTA DO SITE.
-                  Insira o nome exato dele (ex: musica.mp4, track.mp3) dentro das aspas do src="".
-                -->
+              
                 <audio src="musica.mp3" controls loop class="audio-player"></audio>
             </div>
         </section>
 
-        <!-- ABA 3: CONTATO (Com as suas informações reais) -->
+      
         <section id="contato" class="aba-conteudo">
             <div class="links-container">
                 <a href="https://discord.com" target="_blank" class="botao-link">
@@ -70,7 +65,7 @@
         </section>
 
 
-        <!-- RODAPÉ DO CARD -->
+     
         <footer>
             <p>&copy; 🕊 Made by @davsemj 🕊
                
@@ -80,19 +75,19 @@
 
     </main>
 
-    <!-- Script JavaScript para fazer a troca de abas funcionar na hora -->
+   
     <script>
         function mudarAba(idAba) {
-            // Remove a classe ativa de todas as seções de conteúdo
+            
             document.querySelectorAll('.aba-conteudo').forEach(secao => {
                 secao.classList.remove('ativa');
             });
-            // Remove a classe ativa de todos os botões do menu
+            
             document.querySelectorAll('.link').forEach(botao => {
                 botao.classList.remove('ativo');
             });
             
-            // Ativa a seção clicada e destaca o botão correspondente no menu
+           
             document.getElementById(idAba).classList.add('ativa');
             event.target.classList.add('ativo');
         }
